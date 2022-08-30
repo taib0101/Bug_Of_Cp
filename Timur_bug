@@ -19,8 +19,8 @@ bool check(string x)
  
 int main()
 {
-    //Actually i get bug during contest time in codeforces....i just used next_permutation builed in function \
-    //but permutation of "Timru" is missing from "Timru"....if you don't belive you can try and find my bug ...then i will pay you
+    //Actually i got bug during contest time in codeforces....i just used next_permutation builed in function \
+    //but permutation of "Timru" is missing from "Timur"....if you don't belive you can try and find my bug ...then i will pay you
     int t;
     cin >> t;
     while(t--)
