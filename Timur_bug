@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+bool check(string x)
+{
+    string y = "Timur";
+    if(y == x)
+        return 1;
+    while(next_permutation(y.begin(),y.end()))
+    {
+        //cout << "y = " << y << endl;
+        //here "Timru" is missing
+        if(y == x)
+            return 1;
+    }
+    return 0;
+}
+ 
+int main()
+{
+    //Actually i get bug during contest time in codeforces....i just used next_permutation builed in function \
+    //but permutation of "Timru" is missing from "Timru"....if you don't belive you can try and find my bug ...then i will pay you
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        bool bl = 0;
+        string x;
+        cin >> x;
+        if(check(x))
+            cout << "yes" << endl;
+        else
+            cout << "no" << endl;
+    }
+    return 0;
+}
